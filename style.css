@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 15px;
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-container {
+    width: 780px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+}
+
+.result-container-body {
+    padding: 20px;
+}
+
+.result-container .result-container-body .navbar {
+    display: flex;
+    flex-wrap:wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f3;
+}
+
+.result-container .result-container-body .navbar li {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+}
+
+.result-container .result-container-body .navbar li a {
+    display: block;
+    padding: 12px 20px;
+    color: rgb(5, 112, 5);
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.15s ease-in-out;
+}
+
+.result-container .result-container-body .navbar li a.active{
+    color: rgb(5, 112, 5);
+    background-color: rgba(135, 243, 135, 0.438);
+}
+
+.result-container .result-container-body .navbar li a span.icon {
+    display: none;
+}
+
+.result-container .result-container-body .navbar li a span.text{
+    display: block;
+}
+
+.result-container .tab-content {
+    padding: 16px;
+}
+
+.result-container .tab-content .tab-pane {
+    display: none;
+}
+
+.result-container .tab-content .tab-pane.active{
+    display: block;
+}
+
+.result-container .tab-content .tab-pane p {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.7px;
+}
+
+.result-group {
+    display: flex;
+    border: 1px solid #f0f0f3;
+    border-radius: 5px;
+}
+.result-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@media(max-width:575px){
+    .result-container .result-container-body .navbar li a span.icon {
+        display: block;
+    }
+    
+    .result-container .result-container-body .navbar li a span.text{
+        display: none;
+    }
+}
