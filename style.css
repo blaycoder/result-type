@@ -98,11 +98,21 @@ body {
 
 
 @media(max-width:575px){
-    .result-container .result-container-body .navbar li a span.icon {
+    .result-container {
+        width: 850px;
+    }
+
+    .result-container .result-container-body .navbar li a span.text{
         display: block;
     }
-    
-    .result-container .result-container-body .navbar li a span.text{
-        display: none;
+
+    .result-image img {
+        width: 90%;
+    }
+}
+
+@media(max-width:955px){
+    .result-container {
+        width: 900px;
     }
 }
